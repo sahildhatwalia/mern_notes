@@ -1,0 +1,515 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+
+/* Page Container */
+.page-container {
+  max-width: 1200px;
+  height: 430px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.service-card {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Form */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto 0;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+/* useStatehook.css */
+
+/* Counter Container */
+.counter-container {
+  text-align: center;
+  margin: 2rem auto;
+  height: 430px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Title */
+.counter-title {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+/* Count Display */
+.counter-display {
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+  color: #3498db;
+}
+
+/* Button Group */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.counter-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 100px;
+}
+
+.counter-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.counter-button:active {
+  transform: translateY(0);
+}
+
+/* Messages */
+.counter-message {
+  color: #e74c3c;
+  font-style: italic;
+  margin-top: 1.5rem;
+  animation: fadeIn 0.5s ease;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .counter-button {
+    width: 100%;
+  }
+}
+
+
+
+/* LifecycleDemo.css */
+
+.lifecycle-demo {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.lifecycle-demo h2 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.lifecycle-demo p {
+  margin: 1rem 0;
+  color: #34495e;
+  font-size: 1.1rem;
+}
+
+.counter-display {
+  background-color: #e8f4fc;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.message-display {
+  background-color: #f0f8ff;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: #16a085;
+}
+
+.lifecycle-demo button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+.lifecycle-demo button:hover {
+  background-color: #2980b9;
+}
+
+.lifecycle-demo input {
+  padding: 0.6rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.console-note {
+  font-style: italic;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+
+/* usereducerhook.css*/
+.counter-container-7a3b {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f8f9fa;
+}
+
+.counter-title-4e1c {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.counter-count-display-d5f2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #2c3e50;
+}
+
+.counter-button-group-8g7h {
+  display: flex;
+  gap: 0.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.counter-button-3k9j {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.counter-button-3k9j:hover {
+  transform: translateY(-2px);
+}
+
+.counter-increment-btn-2m4n {
+  background-color: #28a745;
+  color: white;
+  width: 80%;
+  margin: 10px;
+}
+
+.counter-decrement-btn-6p8q {
+  background-color: #dc3545;
+  color: white;
+  width: 80%;
+  margin: 10px;
+}
+
+.counter-reset-btn-1l5r {
+  background-color: #6c757d;
+  color: white;
+  width: 80%;
+  margin: 10px;
+}
+
+.counter-set-btn-9s2t {
+  background-color: #007bff;
+  color: white;
+  width: 80%;
+  margin: 10px;
+}
+
+/* UseRefHook.module.css */
+.useRefHookContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.useRefHookTitle {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.useRefHookInput {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.useRefHookInput:focus {
+  outline: none;
+  border : 5px solid #3498db;
+}
+
+.useRefHookButton {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.useRefHookButton:hover {
+  background-color: #2980b9;
+}
+
+.useRefHookResetButton {
+  background-color: #e74c3c;
+}
+
+.useRefHookResetButton:hover {
+  background-color: #c0392b;
+}
+
+.useRefHookText {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #ecf0f1;
+  border-radius: 4px;
+  color: #2c3e50;
+}
+
+/* UseIdHook.module.css */
+.useIdContainer {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.useIdTitle {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.useIdFormGroup {
+    margin-bottom: 1.5rem;
+}
+
+.useIdLabel {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.useIdInput {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.useIdInput:focus {
+    outline: none;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.2);
+}
+
+.useIdCheckboxGroup {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.useIdCheckbox {
+    margin-right: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+.useIdCheckboxLabel {
+    color: #495057;
+    cursor: pointer;
+}
+
+.useIdButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #4dabf7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.useIdButton:hover {
+    background-color: #339af0;
+}
+
+.useIdInfo {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    color: #495057;
+    font-size: 0.9rem;
+}
+
+.useIdInfo ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.useIdInfo li {
+    margin-bottom: 0.25rem;
+}

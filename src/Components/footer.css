@@ -1,0 +1,51 @@
+/* footer.css */
+footer {
+  background-color: #2c3e50;
+  color: #ecf0f1;
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: auto; /* Pushes footer to bottom if using flex layout */
+}
+
+footer p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer p:first-child {
+  color: #bdc3c7;
+  font-size: 0.8rem;
+}
+
+/* Social media links (you might want to add these later) */
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .social-links a {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+  color: #3498db;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+  footer {
+    padding: 2.5rem 1rem;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+}
