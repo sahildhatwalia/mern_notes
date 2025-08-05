@@ -1,6 +1,6 @@
 // UseIdHook.jsx
 import React, { useId } from 'react';
-import styles from '../App.css';
+
 
 const UseIdHook = () => {
     // Generate unique IDs
@@ -9,47 +9,47 @@ const UseIdHook = () => {
     const checkboxId = useId();
 
     return (
-        <div className={styles.useIdContainer}>
-            <h2 className={styles.useIdTitle}>useId Hook Example</h2>
+        <div className="useIdContainer">
+            <h2 className="useIdTitle">useId Hook Example</h2>
             
-            <div className={styles.useIdFormGroup}>
-                <label htmlFor={emailId} className={styles.useIdLabel}>
+            <div className="useIdFormGroup">
+                <label htmlFor={emailId} className="useIdLabel">
                     Email Address
                 </label>
                 <input
                     type="email"
                     id={emailId}
-                    className={styles.useIdInput}
+                    className="useIdInput"
                     placeholder="Enter your email"
                 />
             </div>
 
-            <div className={styles.useIdFormGroup}>
-                <label htmlFor={passwordId} className={styles.useIdLabel}>
+            <div className="useIdFormGroup">
+                <label htmlFor={passwordId} className="useIdLabel">
                     Password
                 </label>
                 <input
                     type="password"
                     id={passwordId}
-                    className={styles.useIdInput}
+                    className="useIdInput"
                     placeholder="Enter your password"
                 />
             </div>
 
-            <div className={styles.useIdCheckboxGroup}>
+            <div className="useIdCheckboxGroup">
                 <input
                     type="checkbox"
                     id={checkboxId}
-                    className={styles.useIdCheckbox}
+                    className="useIdCheckbox"
                 />
-                <label htmlFor={checkboxId} className={styles.useIdCheckboxLabel}>
+                <label htmlFor={checkboxId} className="useIdCheckboxLabel">
                     Remember me
                 </label>
             </div>
 
-            <button className={styles.useIdButton}>Submit</button>
+            <button className="useIdButton">Submit</button>
 
-            <div className={styles.useIdInfo}>
+            <div className="useIdInfo">
                 <p>Generated IDs:</p>
                 <ul>
                     <li>Email ID: {emailId}</li>

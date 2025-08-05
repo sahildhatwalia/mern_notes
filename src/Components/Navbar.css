@@ -3,6 +3,9 @@ nav {
   background-color: #f8f9fa;
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  white-space: nowrap; 
+  -webkit-overflow-scrolling: touch;
 }
 
 nav ul {
@@ -11,6 +14,8 @@ nav ul {
   padding: 0;
   display: flex;
   gap: 1.5rem;
+  flex-wrap: nowrap;
+  min-width: min-content
 }
 
 nav li {

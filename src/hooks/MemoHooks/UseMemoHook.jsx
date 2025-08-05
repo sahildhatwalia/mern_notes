@@ -5,11 +5,11 @@ const ExpensiveComponent = () => {
   // Simulate an expensive calculation
   const sum = () => {
     console.log('Calculating sum...');
-  let result = 0;
-  for (let i = 0; i < 1000000000; i++) {
+  let i = 0;
+  for ( i = 0; i < 1000000000; i++) {
    i = i + 1;
   }
-  result = i ;
+  return i ;
 
 };
 
