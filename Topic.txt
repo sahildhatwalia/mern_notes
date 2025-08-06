@@ -1,0 +1,192 @@
+React & Vite Learning Roadmap (Conceptual Breakdown)
+
+Week 1: Core Structure & Routing
+
+Day 1: React + Vite Project Structure
+
+Vite Framework:
+
+    A fast build tool for modern web apps (alternative to Create React App).
+
+    Uses ES modules for faster development builds.
+
+File Structure:
+
+    main.jsx → Entry point (renders App.jsx into the DOM).
+
+    App.jsx → Root component where the application starts.
+
+    index.html → Single HTML container.
+
+    vite.config.js → Vite-specific settings (optimizations, plugins).
+
+
+
+Day 2: Reusable Components & Basic Routing
+
+
+Component-Based Architecture:
+
+   Breaking UI into reusable pieces (e.g., Navbar, Footer).
+
+React Router DOM:
+
+   npm i react-router-dom → Handles client-side routing.
+
+Core Concepts:
+
+    BrowserRouter → Wraps the app for routing.
+
+    Routes → Defines route containers.
+
+    Route → Maps paths to components.
+
+
+
+Day 3: Dynamic Navigation & Multi-Page Setup
+
+Props & Props Driling
+
+Pages Folder Structure:
+
+    Organize routes in /pages (e.g., Home, About, Contact).
+
+Dynamic Navbar with Link:
+
+    Replaces <a> tags to prevent full-page reloads.
+
+Uses to="/path" for navigation.
+
+    Router Configuration:
+
+Define routes in App.jsx using Routes and Route.
+
+
+
+Week 2: State Management & Hooks
+
+
+Day 4: useState Hook
+
+Purpose: Manages local state in functional components.
+
+Syntax: const [state, setState] = useState(initialValue)
+
+Behavior: Re-renders component on state change.
+
+
+Day 5: useEffect Hook
+
+Purpose: Handles side effects (API calls, subscriptions).
+
+Lifecycle Stages:
+
+Mount: Runs once when component loads.
+
+Update: Runs when dependencies change.
+
+Unmount: Cleanup (e.g., removing event listeners).
+
+
+
+Day 6: useReducer Hook
+
+Purpose: Manages complex state logic (alternative to useState).
+
+Syntax:
+
+jsx
+const [state, dispatch] = useReducer(reducerFn, initialState);
+Use Case: Better for multiple sub-values or state transitions.
+
+
+Day 7: Refs & useRef/useId
+
+useRef:
+
+Stores mutable values without re-renders.
+
+Commonly used for DOM access.
+
+It is used to manipulate DOM.
+
+useId:
+
+Generates unique IDs for accessibility (e.g., form labels).
+
+
+
+Week 3: Performance Optimization & Advanced Hooks
+
+Day 8: React.memo()
+Purpose: Memoizes components to prevent unnecessary re-renders.
+
+Day 9: useMemo & useCallback
+useMemo:
+
+Memoizes expensive calculations.
+
+useCallback:
+
+Memoizes functions to avoid recreation on re-renders.
+
+
+Day 10: useContext
+Purpose: Shares state globally without prop drilling.
+
+Workflow:
+
+createContext() → Defines the context.
+
+Provider → Wraps components needing access.
+
+useContext() → Accesses the context value.
+
+
+
+Day 11: useTransition & useOptimistic
+
+useTransition:
+
+Marks non-urgent state updates (improves UX during heavy renders).
+
+useOptimistic:
+
+Shows temporary UI changes before server confirmation.
+
+
+
+Week 4: API Integration & Routing Hooks
+
+Day 12: Data Fetching (Fetch vs. Axios)
+
+Fetch API:
+
+Built-in browser API for HTTP requests.
+
+Axios:
+
+Third-party library with better error handling.
+
+
+Day 13: React Router Hooks
+
+useParams:
+
+Extracts dynamic route parameters (e.g., /users/:id).
+
+useNavigate:
+
+Programmatic navigation (e.g., after form submission).
+
+useSearchParams:
+
+Reads and modifies URL query strings.
+
+
+Day 14: State API Context
+
+Global State Patterns:
+
+Redux vs. Context API 
+
