@@ -2,13 +2,16 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
-import { ContentProvider } from '../src/hooks/ContentApi/ContextCreate.jsx'
+import Searcprovider from './Searchcontext.jsx'
+// import { ContentProvider } from '../src/hooks/ContentApi/ContextCreate.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ContentProvider>
+    {/* <ContentProvider> */}
+    <Searcprovider>
     <App />
-    </ContentProvider>
+    </Searcprovider>
+    {/* </ContentProvider> */}
   </StrictMode>
 )
 

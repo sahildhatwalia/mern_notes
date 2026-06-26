@@ -13,10 +13,10 @@ const ExpensiveComponent = () => {
 
 };
 
-// const total = useMemo(() => sum(), []); 
+const total = useMemo(() => sum(), []); 
 // Only calculate once on mount
 
-const total = sum();
+// const total = sum();
 
 return <p> Sum: {total}</p>
 

@@ -16,4 +16,5 @@ return (
 )
 }
 
+// export default React.memo(MemoCount)
 export default MemoCount;
