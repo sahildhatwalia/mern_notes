@@ -37,6 +37,7 @@ const AxiosProducts = () => {
           <h3 className="product-title">{product.title}</h3>
           <p className="product-price">${product.price}</p>
           <p className="product-rating">⭐ {product.rating}/5</p>
+          <button>Add to cart</button>
         </div>
       ))}
     </div>

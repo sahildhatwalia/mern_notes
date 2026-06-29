@@ -95,6 +95,8 @@ import Navbar from "./Navbar/Navbar"
 import Home from "./comp/Home"
 import Shop from "./comp/Shop"
 import Serve from "./comp/Serve"
+import Login from "./Navbar/Login"
+import Detail from "./Apis/Detail"
 const App=()=>{
   return(
    <BrowserRouter>
@@ -103,6 +105,10 @@ const App=()=>{
     <Route path="/" element={<Home/>}/>
     <Route path="/shop" element={<Shop/>} />
     <Route path="/services" element={<Serve/>}/>
+
+    <Route path="/details/:id" element={<Detail/>}/>
+    <Route path="/Login" element={<Login/>}/>
+    
    </Routes>
    {/* <Footer/> */}
    
