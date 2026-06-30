@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addtocart } from '../slice/slice';
 
 const Serve = () => {
+
+  const dispatch=useDispatch()
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -38,7 +42,7 @@ const Serve = () => {
           <h3 className="product-title">{product.title}</h3>
           <p className="product-price">${product.price}</p>
           <p className="product-rating">⭐ {product.rating}/5</p>
-          <button>Add to cart</button>
+          <button onClick={()=>dispatch(addtocart(product))} >Add to cart</button>
         </div>
       ))}
     </div>

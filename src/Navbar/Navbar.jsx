@@ -40,6 +40,12 @@ const Navbar = () => {
             >
               Register
             </Link>
+             <Link
+              to="/cart"
+              className="bg-cyan-500 hover:bg-cyan-600 px-4 py-2 rounded-md transition"
+            >
+              Cart
+            </Link>
           </li>
           <li>Logout</li>
         </ul>

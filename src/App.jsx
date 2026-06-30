@@ -97,6 +97,7 @@ import Shop from "./comp/Shop"
 import Serve from "./comp/Serve"
 import Login from "./Navbar/Login"
 import Detail from "./Apis/Detail"
+import Cart from "./comp/Cart"
 const App=()=>{
   return(
    <BrowserRouter>
@@ -108,6 +109,8 @@ const App=()=>{
 
     <Route path="/details/:id" element={<Detail/>}/>
     <Route path="/Login" element={<Login/>}/>
+      <Route path="/cart" element={<Cart/>}/>
+
     
    </Routes>
    {/* <Footer/> */}
